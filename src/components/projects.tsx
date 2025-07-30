@@ -76,6 +76,7 @@ export default function Projects() {
                   height={200}
                   src={active.src}
                   alt={active.title}
+                  data-ai-hint={active.aiHint}
                   className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
                 />
               </motion.div>
@@ -139,6 +140,7 @@ export default function Projects() {
                   height={100}
                   src={card.src}
                   alt={card.title}
+                  data-ai-hint={card.aiHint}
                   className="h-40 w-40 md:h-14 md:w-14 rounded-lg object-cover object-top"
                 />
               </motion.div>
@@ -208,6 +210,7 @@ const cards = [
     description: "AI-Powered Code Assistant",
     title: "Genie",
     src: "https://placehold.co/600x400.png",
+    aiHint: "robot code",
     ctaText: "View Project",
     ctaLink: "#",
     content: () => {
@@ -223,6 +226,7 @@ const cards = [
     description: "E-commerce Recommendation Engine",
     title: "InsightCart",
     src: "https://placehold.co/600x400.png",
+    aiHint: "shopping cart",
     ctaText: "View Project",
     ctaLink: "#",
     content: () => {
@@ -238,6 +242,7 @@ const cards = [
     description: "Interactive Data Visualization Tool",
     title: "DataSphere",
     src: "https://placehold.co/600x400.png",
+    aiHint: "data chart",
     ctaText: "View Project",
     ctaLink: "#",
     content: () => {
@@ -253,6 +258,7 @@ const cards = [
     description: "Personal Portfolio Website",
     title: "My Portfolio",
     src: "https://placehold.co/600x400.png",
+    aiHint: "portfolio website",
     ctaText: "View Project",
     ctaLink: "#",
     content: () => {
