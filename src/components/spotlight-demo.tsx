@@ -1,7 +1,7 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 import { Spotlight } from "@/components/ui/spotlight";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/moving-border";
 
 export default function SpotlightPreview() {
   return (
@@ -26,8 +26,19 @@ export default function SpotlightPreview() {
           Let's create something amazing together.
         </p>
         <div className="mt-8 flex justify-center gap-4">
-          <Button variant="outline">My Work</Button>
-          <Button>Contact Me</Button>
+          <Button
+            borderRadius="1.75rem"
+            className="border-neutral-200 bg-transparent text-white dark:border-slate-800"
+          >
+            My Work
+          </Button>
+          <Button
+            borderRadius="1.75rem"
+            containerClassName="h-12 w-40"
+            className="bg-slate-900 text-white"
+          >
+            Contact Me
+          </Button>
         </div>
       </div>
     </div>
