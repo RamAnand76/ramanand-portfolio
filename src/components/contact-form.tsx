@@ -15,16 +15,8 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-} from "@/components/ui/alert-dialog";
 import { useState } from "react";
+import SuccessAlert from "@/components/success-alert";
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -120,19 +112,16 @@ export default function ContactForm() {
           </Form>
         </CardContent>
       </Card>
-      <AlertDialog open={isAlertOpen} onOpenChange={setIsAlertOpen}>
-        <AlertDialogContent>
-          <AlertDialogHeader>
-            <AlertDialogTitle>Message Sent!</AlertDialogTitle>
-            <AlertDialogDescription>
-              Thanks for reaching out. I'll get back to you soon.
-            </AlertDialogDescription>
-          </AlertDialogHeader>
-          <AlertDialogFooter>
-            <AlertDialogAction onClick={handleAlertClose}>OK</AlertDialogAction>
-          </AlertDialogFooter>
-        </AlertDialogContent>
-      </AlertDialog>
+      
+      {isAlertOpen && (
+          <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+              <SuccessAlert
+                  title="Success Notification"
+                  description="Your action has been completed successfully. We'll notify you when updates are available."
+                  onClose={handleAlertClose}
+              />
+          </div>
+      )}
     </>
   );
 }
