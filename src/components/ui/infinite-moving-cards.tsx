@@ -12,6 +12,7 @@ export const InfiniteMovingCards = ({
 }: {
   items: {
     name: string;
+    icon?: React.ReactNode;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -86,13 +87,14 @@ export const InfiniteMovingCards = ({
         {items.map((item, idx) => (
           <li
             className="relative w-max max-w-full shrink-0 rounded-2xl border border-b-0 border-zinc-200 px-8 py-6 dark:border-zinc-700 bg-gray-100 dark:bg-gray-900"
-            key={item.name}
+            key={`${item.name}-${idx}`}
           >
-            <blockquote>
+            <blockquote className="flex items-center gap-4">
               <div
                 aria-hidden="true"
                 className="user-select-none pointer-events-none absolute -top-0.5 -left-0.5 -z-1 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
+               {item.icon && <div className="text-white">{item.icon}</div>}
               <span className="relative z-20 text-lg leading-[1.6] font-semibold text-neutral-800 dark:text-gray-100">
                 {item.name}
               </span>
