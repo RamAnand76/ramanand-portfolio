@@ -2,7 +2,7 @@ import { FloatingNav } from "@/components/ui/floating-navbar";
 import { Card, CardContent } from "@/components/ui/card";
 import { Linkedin, Mail } from "lucide-react";
 import ContactForm from "@/components/contact-form";
-import { navItems } from "@/data/nav";
+import { navItems } from "@/data/nav.tsx";
 
 export default function ContactPage() {
   return (

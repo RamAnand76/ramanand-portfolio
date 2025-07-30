@@ -1,6 +1,6 @@
 import Projects from "@/components/projects";
 import { FloatingNav } from "@/components/ui/floating-navbar";
-import { navItems } from "@/data/nav";
+import { navItems } from "@/data/nav.tsx";
 
 export default function ProjectsPage() {
   return (

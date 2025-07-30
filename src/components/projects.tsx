@@ -3,7 +3,7 @@
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
-import { projectsData } from "@/data/projects";
+import { projectsData } from "@/data/projects.tsx";
 
 export default function Projects() {
   const [active, setActive] = useState<(typeof projectsData)[number] | boolean | null>(

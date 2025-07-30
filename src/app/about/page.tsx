@@ -1,8 +1,8 @@
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { Card, CardContent } from "@/components/ui/card";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
-import { navItems } from "@/data/nav";
-import { skills } from "@/data/about";
+import { navItems } from "@/data/nav.tsx";
+import { skills } from "@/data/about.tsx";
 
 export default function AboutPage() {
   return (
