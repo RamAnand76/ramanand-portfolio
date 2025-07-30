@@ -1,7 +1,7 @@
 import { FloatingNav } from "@/components/ui/floating-navbar";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Home, MessageCircle, User, Cpu, Code, BrainCircuit } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
+import { Home, MessageCircle, User, Code } from "lucide-react";
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 export default function AboutPage() {
   const navItems = [
@@ -28,13 +28,16 @@ export default function AboutPage() {
   ];
 
   const skills = [
-    { name: "Python", icon: <Code className="h-5 w-5 text-primary" /> },
-    { name: "AI Frameworks", icon: <BrainCircuit className="h-5 w-5 text-primary" /> },
-    { name: "LLMs", icon: <Cpu className="h-5 w-5 text-primary" /> },
-    { name: "RAG", icon: <BrainCircuit className="h-5 w-5 text-primary" /> },
-    { name: "React", icon: <Code className="h-5 w-5 text-primary" /> },
-    { name: "LLM API Integration", icon: <Code className="h-5 w-5 text-primary" /> },
-    { name: "Full-Stack Development", icon: <Code className="h-5 w-5 text-primary" /> },
+    { name: "Python" },
+    { name: "AI Frameworks" },
+    { name: "LLMs" },
+    { name: "RAG" },
+    { name: "React" },
+    { name: "LLM API Integration" },
+    { name: "Full-Stack Development" },
+    { name: "Next.js" },
+    { name: "TypeScript" },
+    { name: "Tailwind CSS" },
   ];
 
   return (
@@ -66,13 +69,12 @@ export default function AboutPage() {
 
           <div className="max-w-4xl mx-auto mt-12">
             <h2 className="text-3xl font-bold text-white text-center mb-8">My Skills</h2>
-            <div className="flex flex-wrap justify-center gap-4">
-              {skills.map((skill) => (
-                <Badge key={skill.name} variant="secondary" className="text-lg py-2 px-4 bg-neutral-800 border-neutral-700">
-                  {skill.icon}
-                  <span className="ml-2">{skill.name}</span>
-                </Badge>
-              ))}
+            <div className="flex flex-col items-center justify-center">
+              <InfiniteMovingCards
+                items={skills.map(skill => ({ name: skill.name }))}
+                direction="right"
+                speed="slow"
+              />
             </div>
           </div>
         </div>
