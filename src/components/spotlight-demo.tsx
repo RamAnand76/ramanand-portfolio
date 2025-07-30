@@ -1,10 +1,11 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 import { Spotlight } from "@/components/ui/spotlight";
+import { Button } from "@/components/ui/button";
 
 export default function SpotlightPreview() {
   return (
-    <div className="relative flex h-[40rem] w-full overflow-hidden rounded-md bg-black/[0.96] antialiased md:items-center md:justify-center">
+    <div className="relative flex h-screen w-full flex-col overflow-hidden rounded-md bg-black/[0.96] antialiased items-center justify-center">
       <div
         className={cn(
           "pointer-events-none absolute inset-0 [background-size:40px_40px] select-none",
@@ -16,16 +17,18 @@ export default function SpotlightPreview() {
         className="-top-40 left-0 md:-top-20 md:left-60"
         fill="white"
       />
-      <div className="relative z-10 mx-auto w-full max-w-7xl p-4 pt-20 md:pt-0">
-        <h1 className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl">
-          Spotlight <br /> is the new trend.
+      <div className="relative z-10 mx-auto w-full max-w-7xl p-4 pt-20 md:pt-0 text-center">
+        <h1 className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-4xl font-bold text-transparent md:text-7xl">
+          Creative Frontend Developer
         </h1>
         <p className="mx-auto mt-4 max-w-lg text-center text-base font-normal text-neutral-300">
-          Spotlight effect is a great way to draw attention to a specific part
-          of the page. Here, we are drawing the attention towards the text
-          section of the page. I don&apos;t know why but I&apos;m running out of
-          copy.
+          I build beautiful and interactive user interfaces with a passion for AI and Python.
+          Let's create something amazing together.
         </p>
+        <div className="mt-8 flex justify-center gap-4">
+          <Button variant="outline">My Work</Button>
+          <Button>Contact Me</Button>
+        </div>
       </div>
     </div>
   );

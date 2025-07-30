@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'FocusFlash',
-  description: 'Create a visually appealing spotlight effect to highlight specific sections of a webpage.',
+  title: 'Creative Frontend Developer',
+  description: 'Creative Frontend Developer with Expertise in AI and Python.',
 };
 
 export default function RootLayout({
