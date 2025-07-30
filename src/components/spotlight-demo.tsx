@@ -36,13 +36,15 @@ export default function SpotlightPreview() {
               Projects
             </Button>
           </Link>
-          <Button
-            borderRadius="1.75rem"
-            className="bg-accent/10 text-white border-slate-800"
-            borderClassName="bg-[radial-gradient(hsl(var(--accent))_40%,transparent_60%)]"
-          >
-            Contact Me
-          </Button>
+          <Link href="/contact">
+            <Button
+              borderRadius="1.75rem"
+              className="bg-accent/10 text-white border-slate-800"
+              borderClassName="bg-[radial-gradient(hsl(var(--accent))_40%,transparent_60%)]"
+            >
+              Contact Me
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
