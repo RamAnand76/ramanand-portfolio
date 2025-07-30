@@ -1,3 +1,9 @@
+import SpotlightPreview from "@/components/spotlight-demo";
+
 export default function Home() {
-  return <></>;
+  return (
+    <main>
+      <SpotlightPreview />
+    </main>
+  );
 }
