@@ -28,14 +28,15 @@ export default function SpotlightPreview() {
         <div className="mt-8 flex justify-center gap-4">
           <Button
             borderRadius="1.75rem"
-            className="border-neutral-200 bg-transparent text-white dark:border-slate-800"
+            className="bg-primary text-primary-foreground"
+            borderClassName="bg-[radial-gradient(hsl(var(--primary))_40%,transparent_60%)]"
           >
             My Work
           </Button>
           <Button
             borderRadius="1.75rem"
-            containerClassName="h-12 w-40"
-            className="bg-slate-900 text-white"
+            className="bg-accent/10 text-white border-slate-800"
+            borderClassName="bg-[radial-gradient(hsl(var(--accent))_40%,transparent_60%)]"
           >
             Contact Me
           </Button>
