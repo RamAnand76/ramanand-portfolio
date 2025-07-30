@@ -3,9 +3,10 @@
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
+import { projectsData } from "@/data/projects";
 
 export default function Projects() {
-  const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
+  const [active, setActive] = useState<(typeof projectsData)[number] | boolean | null>(
     null
   );
   const ref = useRef<HTMLDivElement>(null);
@@ -126,7 +127,7 @@ export default function Projects() {
         ) : null}
       </AnimatePresence>
       <ul className="max-w-2xl mx-auto w-full gap-4 px-4">
-        {cards.map((card, index) => (
+        {projectsData.map((card, index) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
@@ -204,70 +205,3 @@ export const CloseIcon = () => {
     </motion.svg>
   );
 };
-
-const cards = [
-  {
-    description: "AI-Powered Code Assistant",
-    title: "Genie",
-    src: "https://placehold.co/600x400.png",
-    aiHint: "robot code",
-    ctaText: "View Project",
-    ctaLink: "#",
-    content: () => {
-      return (
-        <p>
-          Genie is a code assistant that uses generative AI to help developers write code faster and more efficiently. 
-          It can autocomplete code, suggest solutions, and even write entire functions based on natural language descriptions.
-        </p>
-      );
-    },
-  },
-  {
-    description: "E-commerce Recommendation Engine",
-    title: "InsightCart",
-    src: "https://placehold.co/600x400.png",
-    aiHint: "shopping cart",
-    ctaText: "View Project",
-    ctaLink: "#",
-    content: () => {
-      return (
-        <p>
-          InsightCart is a recommendation engine for e-commerce websites. 
-          It uses machine learning to analyze user behavior and provide personalized product recommendations, increasing sales and customer satisfaction.
-        </p>
-      );
-    },
-  },
-  {
-    description: "Interactive Data Visualization Tool",
-    title: "DataSphere",
-    src: "https://placehold.co/600x400.png",
-    aiHint: "data chart",
-    ctaText: "View Project",
-    ctaLink: "#",
-    content: () => {
-      return (
-        <p>
-          DataSphere is a web-based tool for creating interactive data visualizations. 
-          It allows users to upload their own data and create beautiful, engaging charts and graphs with just a few clicks.
-        </p>
-      );
-    },
-  },
-  {
-    description: "Personal Portfolio Website",
-    title: "My Portfolio",
-    src: "https://placehold.co/600x400.png",
-    aiHint: "portfolio website",
-    ctaText: "View Project",
-    ctaLink: "#",
-    content: () => {
-      return (
-        <p>
-          A personal portfolio website built with Next.js and Tailwind CSS. 
-          It features a clean, modern design and showcases my skills and projects.
-        </p>
-      );
-    },
-  },
-];
