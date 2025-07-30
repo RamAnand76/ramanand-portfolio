@@ -1,8 +1,8 @@
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/moving-border";
 import { Code, Home, Linkedin, Mail, MessageCircle, User } from "lucide-react";
 import Link from "next/link";
+import ContactForm from "@/components/contact-form";
 
 export default function ContactPage() {
   const navItems = [
@@ -42,7 +42,7 @@ export default function ContactPage() {
             </p>
           </div>
 
-          <div className="max-w-2xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="max-w-4xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="bg-black border-neutral-800">
               <CardContent className="pt-6 flex flex-col items-center text-center">
                 <Mail className="w-12 h-12 text-primary mb-4" />
@@ -65,6 +65,9 @@ export default function ContactPage() {
                 </p>
               </CardContent>
             </Card>
+          </div>
+          <div className="max-w-2xl mx-auto mt-12">
+            <ContactForm />
           </div>
         </div>
       </div>
