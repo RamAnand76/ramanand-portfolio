@@ -100,9 +100,11 @@ export default function ContactForm() {
                 </FormItem>
               )}
             />
-            <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-white">
-              Send Message
-            </Button>
+            <div className="flex justify-center">
+              <Button type="submit" className="w-1/2 bg-primary hover:bg-primary/90 text-white">
+                Submit
+              </Button>
+            </div>
           </form>
         </Form>
       </CardContent>
