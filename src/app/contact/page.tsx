@@ -1,5 +1,5 @@
 import { FloatingNav } from "@/components/ui/floating-navbar";
-import { Home, MessageCircle, User } from "lucide-react";
+import { Code, Home, MessageCircle, User } from "lucide-react";
 
 export default function ContactPage() {
     const navItems = [
@@ -12,6 +12,11 @@ export default function ContactPage() {
       name: "About",
       link: "/about",
       icon: <User className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    },
+    {
+        name: "Projects",
+        link: "/projects",
+        icon: <Code className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
       name: "Contact",
