@@ -1,13 +1,13 @@
 import SpotlightPreview from "@/components/spotlight-demo";
 import { FloatingNav } from "@/components/ui/floating-navbar";
-import { Home, MessageCircle, User } from "lucide-react";
+import { Home as HomeIcon, MessageCircle, User } from "lucide-react";
 
-export default function Home() {
+export default function HomePage() {
   const navItems = [
     {
       name: "Home",
       link: "/",
-      icon: <Home className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <HomeIcon className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
       name: "About",
