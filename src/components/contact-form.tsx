@@ -42,7 +42,11 @@ export default function ContactForm() {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+    const whatsappNumber = "917012445960";
+    const message = `*Name:* ${values.name}\n*Email:* ${values.email}\n*Message:* ${values.message}`;
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    
+    window.open(whatsappUrl, "_blank");
     setIsAlertOpen(true);
   }
 
@@ -116,8 +120,8 @@ export default function ContactForm() {
       {isAlertOpen && (
           <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
               <SuccessAlert
-                  title="Success Notification"
-                  description="Your action has been completed successfully. We'll notify you when updates are available."
+                  title="Message Ready"
+                  description="Your message is ready to be sent. Please continue in WhatsApp."
                   onClose={handleAlertClose}
               />
           </div>
