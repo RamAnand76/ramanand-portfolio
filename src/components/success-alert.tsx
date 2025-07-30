@@ -15,7 +15,7 @@ const CheckIcon = () => (
 
 export default function SuccessAlert({ title, description, onClose }: SuccessAlertProps) {
   return (
-    <div className="bg-[#032d1f] border border-[#054a31] rounded-lg p-4 max-w-sm w-full shadow-lg text-white">
+    <div className="bg-black border border-[#054a31] rounded-lg p-4 max-w-sm w-full shadow-lg text-white">
       <div className="flex items-start gap-4">
         <div className="flex-shrink-0 bg-[#054a31] p-2 rounded-full">
           <CheckIcon />
