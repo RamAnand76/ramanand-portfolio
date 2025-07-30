@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Spotlight } from "@/components/ui/spotlight";
 import { Button } from "@/components/ui/moving-border";
@@ -26,13 +27,15 @@ export default function SpotlightPreview() {
           Let's create something amazing together.
         </p>
         <div className="mt-8 flex justify-center gap-4">
-          <Button
-            borderRadius="1.75rem"
-            className="bg-primary text-primary-foreground"
-            borderClassName="bg-[radial-gradient(hsl(var(--primary))_40%,transparent_60%)]"
-          >
-            My Work
-          </Button>
+          <Link href="/projects">
+            <Button
+              borderRadius="1.75rem"
+              className="bg-primary text-primary-foreground"
+              borderClassName="bg-[radial-gradient(hsl(var(--primary))_40%,transparent_60%)]"
+            >
+              Projects
+            </Button>
+          </Link>
           <Button
             borderRadius="1.75rem"
             className="bg-accent/10 text-white border-slate-800"
