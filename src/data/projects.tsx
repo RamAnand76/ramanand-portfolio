@@ -1,65 +1,65 @@
 export const projectsData = [
   {
-    description: "AI-Powered Code Assistant",
-    title: "Genie",
-    src: "/projects/genie.png",
-    aiHint: "robot code",
+    title: "LegalIntelligencePlatform",
+    description: "AI-powered legal solutions for contract reviews and compliance.",
+    src: "/projects/legaltech.png",
+    aiHint: "legal document",
     ctaText: "View Project",
-    ctaLink: "#",
+    ctaLink: "https://legal-tech-v0.vercel.app/",
     content: () => {
       return (
-        <p>
-          Genie is a code assistant that uses generative AI to help developers write code faster and more efficiently. 
-          It can autocomplete code, suggest solutions, and even write entire functions based on natural language descriptions.
-        </p>
+        <>
+          <p>
+            An AI-driven platform designed to empower businesses and individuals with intelligent legal solutions.
+          </p>
+          <p>
+            It helps streamline contract reviews, ensure regulatory compliance, and ultimately protect user interests by leveraging the power of advanced AI. Built with Next.js and Supabase for a robust and scalable architecture.
+          </p>
+        </>
       );
     },
   },
   {
-    description: "E-commerce Recommendation Engine",
-    title: "InsightCart",
-    src: "/projects/insight-cart.png",
-    aiHint: "shopping cart",
+    title: "Prathividhi",
+    description: "A forum for citizens to discuss and solve societal problems.",
+    src: "/projects/prathividhi.png",
+    aiHint: "community forum",
     ctaText: "View Project",
-    ctaLink: "#",
+    ctaLink: "https://prathividhi.web.app/",
     content: () => {
       return (
-        <p>
-          InsightCart is a recommendation engine for e-commerce websites. 
-          It uses machine learning to analyze user behavior and provide personalized product recommendations, increasing sales and customer satisfaction.
-        </p>
+        <>
+          <p>
+            My first React application, built to assess my self-taught React skills. 
+          </p>
+          <p>
+            Prathividhi is a forum where users can post civic problems they face, and other users can collaborate to suggest and discuss solutions. It’s a platform for community empowerment and problem-solving.
+          </p>
+        </>
       );
     },
   },
   {
-    description: "Interactive Data Visualization Tool",
-    title: "DataSphere",
-    src: "/projects/datasphere.png",
-    aiHint: "data chart",
+    title: "ScriptForge",
+    description: "AI-assisted screenplay writer to streamline your creative process.",
+    src: "/projects/scriptforge.png",
+    aiHint: "screenwriting AI",
     ctaText: "View Project",
-    ctaLink: "#",
+    ctaLink: "https://script-forge-two.vercel.app/",
     content: () => {
       return (
-        <p>
-          DataSphere is a web-based tool for creating interactive data visualizations. 
-          It allows users to upload their own data and create beautiful, engaging charts and graphs with just a few clicks.
-        </p>
-      );
-    },
-  },
-  {
-    description: "Personal Portfolio Website",
-    title: "My Portfolio",
-    src: "/projects/portfolio.png",
-    aiHint: "portfolio website",
-    ctaText: "View Project",
-    ctaLink: "#",
-    content: () => {
-      return (
-        <p>
-          A personal portfolio website built with Next.js and Tailwind CSS. 
-          It features a clean, modern design and showcases my skills and projects.
-        </p>
+        <>
+          <p>
+            ScriptForge is an AI-assisted screenplay writer that transforms a simple story thread into a structured series of key events. It provides an organized workspace for writers to craft their screenplay with a natural flow.
+          </p>
+          <h4 className="font-bold mt-4">Features:</h4>
+          <ul className="list-disc pl-4">
+            <li>AI-suggested scenes based on story threads.</li>
+            <li>Emotion enhancement for dialogue and scenes.</li>
+            <li>Tools to make scenes more cinematic.</li>
+            <li>In-depth character analysis.</li>
+          </ul>
+        </>
       );
     },
   },
