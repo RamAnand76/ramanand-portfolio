@@ -4,6 +4,7 @@ import { FloatingNav } from "@/components/ui/floating-navbar";
 import { Card, CardContent } from "@/components/ui/card";
 import { navItems } from "@/data/nav.tsx";
 import { IconCloud } from "@/components/ui/icon-cloud";
+import { PixelImage } from "@/components/ui/pixel-image";
 
 const slugs = [
   "typescript",
@@ -59,9 +60,9 @@ export default function AboutPage() {
 
           <div className="max-w-6xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
             <div className="md:col-span-1">
-              <img
+              <PixelImage
                 src="/projects/me.png"
-                alt="Ramanand R"
+                grid="8x8"
                 className="rounded-lg"
                 data-ai-hint="personal photo"
               />
