@@ -1,10 +1,48 @@
+"use client";
+
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { Card, CardContent } from "@/components/ui/card";
-import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { navItems } from "@/data/nav.tsx";
-import { skills } from "@/data/about.tsx";
+import { IconCloud } from "@/components/ui/icon-cloud";
+
+const slugs = [
+  "typescript",
+  "javascript",
+  "dart",
+  "java",
+  "react",
+  "flutter",
+  "android",
+  "html5",
+  "css3",
+  "nodedotjs",
+  "express",
+  "nextdotjs",
+  "prisma",
+  "amazonaws",
+  "postgresql",
+  "firebase",
+  "nginx",
+  "vercel",
+  "testinglibrary",
+  "jest",
+  "cypress",
+  "docker",
+  "git",
+  "jira",
+  "github",
+  "gitlab",
+  "visualstudiocode",
+  "androidstudio",
+  "sonarqube",
+  "figma",
+];
 
 export default function AboutPage() {
+  const images = slugs.map(
+    (slug) => `https://cdn.simpleicons.org/${slug}`,
+  );
+
   return (
     <div className="relative w-full bg-black/[0.96] antialiased">
       <FloatingNav navItems={navItems} />
@@ -44,12 +82,8 @@ export default function AboutPage() {
 
           <div className="max-w-5xl mx-auto mt-16">
             <h2 className="text-3xl font-bold text-white text-center mb-8">My Skills</h2>
-            <div className="flex flex-col items-center justify-center">
-              <InfiniteMovingCards
-                items={skills}
-                direction="right"
-                speed="slow"
-              />
+            <div className="relative flex size-full items-center justify-center overflow-hidden">
+              <IconCloud images={images} />
             </div>
           </div>
         </div>
