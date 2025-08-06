@@ -3,7 +3,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { navItems } from "@/data/nav.tsx";
 import { skills } from "@/data/about.tsx";
-import { PixelImage } from "@/components/ui/pixel-image";
 
 export default function AboutPage() {
   return (
@@ -22,10 +21,10 @@ export default function AboutPage() {
 
           <div className="max-w-6xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
             <div className="md:col-span-1">
-              <PixelImage
+              <img
                 src="/projects/me.png"
+                alt="Ramanand R"
                 className="rounded-lg"
-                grid="8x8"
                 data-ai-hint="personal photo"
               />
             </div>
