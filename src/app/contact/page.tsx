@@ -11,7 +11,7 @@ export default function ContactPage() {
       <div className="min-h-screen pt-24 sm:pt-32 pb-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-2xl sm:text-3xl font-bold text-white">
+            <h1 className="text-3xl font-bold text-center text-white mb-8">
               Get in Touch
             </h1>
             <p className="mt-4 text-base text-neutral-300">
