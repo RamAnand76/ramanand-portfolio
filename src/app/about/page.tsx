@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { navItems } from "@/data/nav.tsx";
 import { skills } from "@/data/about.tsx";
+import { PixelImage } from "@/components/ui/pixel-image";
 
 export default function AboutPage() {
   return (
@@ -17,22 +18,32 @@ export default function AboutPage() {
             <p className="mt-4 text-lg text-neutral-300">
               Ramanand R
             </p>
-            <p className="mt-6 text-xl text-neutral-200">
-              Full-Stack Developer & AI Specialist
-            </p>
           </div>
 
-          <div className="max-w-4xl mx-auto mt-12">
-            <Card className="bg-black border-neutral-800">
-              <CardContent className="pt-6">
-                <p className="text-neutral-300 leading-relaxed">
-                  I am a passionate Full-Stack Developer with deep expertise in AI, particularly in Python and its powerful frameworks. I specialize in building intelligent applications leveraging Large Language Models (LLMs), Retrieval-Augmented Generation (RAG) systems, and seamless API integrations with modern frontend frameworks like React. I thrive on solving complex problems and turning innovative ideas into reality.
-                </p>
-              </CardContent>
-            </Card>
+          <div className="max-w-6xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <div className="md:col-span-1">
+              <PixelImage
+                src="/projects/me.png"
+                className="rounded-lg"
+                grid="8x8"
+                data-ai-hint="personal photo"
+              />
+            </div>
+            <div className="md:col-span-2">
+              <Card className="bg-black border-neutral-800">
+                <CardContent className="pt-6">
+                  <p className="text-xl text-neutral-200 mb-4 text-center md:text-left">
+                    Full-Stack Developer & AI Specialist
+                  </p>
+                  <p className="text-neutral-300 leading-relaxed">
+                    I am a passionate Full-Stack Developer with deep expertise in AI, particularly in Python and its powerful frameworks. I specialize in building intelligent applications leveraging Large Language Models (LLMs), Retrieval-Augmented Generation (RAG) systems, and seamless API integrations with modern frontend frameworks like React. I thrive on solving complex problems and turning innovative ideas into reality.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
           </div>
 
-          <div className="max-w-5xl mx-auto mt-12">
+          <div className="max-w-5xl mx-auto mt-16">
             <h2 className="text-3xl font-bold text-white text-center mb-8">My Skills</h2>
             <div className="flex flex-col items-center justify-center">
               <InfiniteMovingCards
