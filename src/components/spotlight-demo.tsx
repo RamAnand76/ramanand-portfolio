@@ -19,7 +19,7 @@ export default function SpotlightPreview() {
         fill="white"
       />
       <div className="relative z-10 mx-auto w-full max-w-7xl p-4 pt-20 md:pt-0 text-center">
-        <h1 className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-4xl font-bold text-transparent md:text-7xl">
+        <h1 className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-2xl font-bold text-transparent md:text-5xl">
           Creative Frontend Developer
         </h1>
         <p className="mx-auto mt-4 max-w-lg text-center text-base font-normal text-neutral-300">
