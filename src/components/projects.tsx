@@ -105,7 +105,7 @@ export default function Projects() {
                     target="_blank"
                     className="px-4 py-2 text-sm rounded-full font-bold bg-accent/10 text-white border-slate-800"
                   >
-                    Visit Project
+                    Visit
                   </motion.a>
                 </div>
                 <div className="pt-4 relative px-4">
