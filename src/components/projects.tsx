@@ -105,7 +105,7 @@ export default function Projects() {
                     target="_blank"
                     className="px-4 py-3 text-sm rounded-full font-bold bg-green-500 text-white"
                   >
-                    View
+                    Visit
                   </motion.a>
                 </div>
                 <div className="pt-4 relative px-4">
@@ -164,7 +164,7 @@ export default function Projects() {
               layoutId={`button-${card.title}-${id}`}
               className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-green-500 hover:text-white text-black mt-4 md:mt-0 shrink-0"
             >
-              View
+              Visit
             </motion.button>
           </motion.div>
         ))}
