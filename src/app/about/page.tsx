@@ -58,7 +58,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="max-w-6xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+          <div className="max-w-6xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
             <div className="md:col-span-1">
               <PixelImage
                 src="/projects/me.png"
@@ -67,14 +67,18 @@ export default function AboutPage() {
                 data-ai-hint="personal photo"
               />
             </div>
-            <div className="md:col-span-2">
+            <div className="md:col-span-2 flex flex-col gap-8">
               <Card className="bg-black border-neutral-800">
                 <CardContent className="pt-6">
-                  <p className="text-xl text-neutral-200 mb-4 text-center md:text-left">
+                  <p className="text-xl text-neutral-200 mb-0 text-center md:text-left font-bold">
                     Full-Stack Developer & AI Specialist
                   </p>
+                </CardContent>
+              </Card>
+              <Card className="bg-black border-neutral-800">
+                <CardContent className="pt-6">
                   <p className="text-neutral-300 leading-relaxed">
-                    I am a passionate Full-Stack Developer with deep expertise in AI, particularly in Python and its powerful frameworks. I specialize in building intelligent applications leveraging Large Language Models (LLMs), Retrieval-Augmented Generation (RAG) systems, and seamless API integrations with modern frontend frameworks like React. I thrive on solving complex problems and turning innovative ideas into reality.
+                    I am a passionate Full-Stack Developer with deep expertise in AI, particularly in Python and its powerful frameworks. I specialize in building intelligent applications that leverage Large Language Models (LLMs), Retrieval-Augmented Generation (RAG) systems, and seamless API integrations with modern frontend frameworks like React. I thrive on solving complex problems and turning innovative ideas into reality.
                   </p>
                 </CardContent>
               </Card>
