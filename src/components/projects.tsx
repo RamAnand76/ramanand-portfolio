@@ -103,9 +103,9 @@ export default function Projects() {
                     layoutId={`button-${active.title}-${id}`}
                     href={active.ctaLink}
                     target="_blank"
-                    className="px-4 py-3 text-sm rounded-full font-bold bg-green-500 text-white"
+                    className="px-4 py-2 text-sm rounded-full font-bold bg-accent/10 text-white border-slate-800"
                   >
-                    Visit
+                    Visit Project
                   </motion.a>
                 </div>
                 <div className="pt-4 relative px-4">
@@ -114,7 +114,7 @@ export default function Projects() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                    className="text-neutral-600 text-sm md:text-base lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                   >
                     {typeof active.content === "function"
                       ? active.content()
@@ -162,7 +162,7 @@ export default function Projects() {
             </div>
             <motion.button
               layoutId={`button-${card.title}-${id}`}
-              className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-green-500 hover:text-white text-black mt-4 md:mt-0 shrink-0"
+              className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-primary hover:text-white text-black mt-4 md:mt-0 shrink-0"
             >
               View
             </motion.button>
